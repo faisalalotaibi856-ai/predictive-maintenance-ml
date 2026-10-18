@@ -1,6 +1,6 @@
 # GitHub Upload and Suggested Commit Plan
 
-No Git commits have been created for this package. Do not invent backdated work or claim the sequence below already occurred. A single honest initial commit is suitable for the complete starting project; use subsequent commits for changes you actually make and understand.
+This repository now contains the actual publication commits. The instructions below were included with the source package and remain as a reference for future uploads. Do not invent backdated work or claim the sequence below already occurred. A single honest initial commit is suitable for the complete starting project; use subsequent commits for changes you actually make and understand.
 
 ## Review before uploading
 

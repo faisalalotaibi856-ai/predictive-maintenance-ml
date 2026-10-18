@@ -208,7 +208,12 @@ predictive-maintenance-ml/
 
 ## Installation
 
-Extract the ZIP, then open a terminal in the directory containing this README. Python 3.11 or 3.12 is recommended; the delivered run used Python 3.12.
+Clone this repository (or extract the source ZIP), then open a terminal in the directory containing this README. Python 3.11 or 3.12 is recommended; the delivered run used Python 3.12.
+
+```bash
+git clone https://github.com/faisalalotaibi856-ai/predictive-maintenance-ml.git
+cd predictive-maintenance-ml
+```
 
 **Windows PowerShell / Command Prompt** (activation is optional):
 
