@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.tmp
+*.log
+*.zip
+.env
+.env.*
+# Trained models are recreated by src.train, not committed to GitHub.
+models/*
+!models/.gitkeep
+# The small, attributed official CSV is intentionally included.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/ai4i2020.csv
