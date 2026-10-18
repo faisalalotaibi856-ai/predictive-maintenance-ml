@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "completed_at_utc": "2026-10-05T09:26:10.112041+00:00",
+  "dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "model_sha256": "32b273549e24b947f46337aa6ad36d994100f9b3cd78c1ff6581c690bd78fee5",
+  "python_version": "3.12.14",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_sha256": {
+    "__init__.py": "6b727cc9ca5d72061a629f9f9f4f5c9c5c78c5b74fda0879d0f89ef72a8a5f1b",
+    "data.py": "8f9bc8e1d78401bdeb54441407c71c2fffe497f0ba6f4011083321ac3621d0ad",
+    "eda.py": "9d00176dc83f63e903e9b6d4a93f7024824d42b4395cbe842d5f4cb82d8d7c2e",
+    "evaluate.py": "633be5b1b8c5264a428e0f6db3585454b2e6aa7297e5fdae62a68aa19e5862bd",
+    "predict.py": "e78fcf433b56dcc7551079e48fe12563e7b7f3328305aecf904d26945b2817ba",
+    "preprocessing.py": "03c5f3a4f57e2b7274bcfbe062776e4086913f294c181d006f31461f5eceadff",
+    "train.py": "3a12e7b2cc84f575193d6a281dbbbbdaf76967ec81ebe6759f4a56bc76a2559c"
+  },
+  "random_state": 42,
+  "split": {
+    "fit": {
+      "rows": 6400,
+      "failures": 217
+    },
+    "validation": {
+      "rows": 1600,
+      "failures": 54
+    },
+    "test": {
+      "rows": 2000,
+      "failures": 68
+    }
+  },
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "selected_model": "HistGradientBoosting",
+  "selection_metric": "average_precision",
+  "cv_folds": 5,
+  "tuning_grid": {
+    "classifier__max_leaf_nodes": [
+      15,
+      31
+    ],
+    "classifier__l2_regularization": [
+      0.0,
+      1.0
+    ],
+    "classifier__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "tuning_configurations": 8,
+  "best_parameters": {
+    "classifier__class_weight": null,
+    "classifier__l2_regularization": 0.0,
+    "classifier__max_leaf_nodes": 31
+  },
+  "best_cv_average_precision": 0.7752348918142199,
+  "best_cv_average_precision_std": 0.04742915034527685,
+  "threshold": 0.1,
+  "threshold_rule": "Maximum validation F1 over 0.05..0.95 in 0.05 steps; highest threshold wins ties.",
+  "validation_at_selected_threshold": {
+    "threshold": 0.1,
+    "precision": 0.6981132075471698,
+    "recall": 0.6851851851851852,
+    "f1": 0.6915887850467289,
+    "tn": 1530.0,
+    "fp": 16.0,
+    "fn": 17.0,
+    "tp": 37.0
+  },
+  "test_metrics": {
+    "accuracy": 0.9835,
+    "precision": 0.7464788732394366,
+    "recall": 0.7794117647058824,
+    "f1": 0.762589928057554,
+    "roc_auc": 0.9663941663621971,
+    "average_precision": 0.8429881135632674,
+    "confusion_matrix": [
+      [
+        1914,
+        18
+      ],
+      [
+        15,
+        53
+      ]
+    ],
+    "classification_report": {
+      "No failure": {
+        "precision": 0.9922239502332815,
+        "recall": 0.9906832298136646,
+        "f1-score": 0.9914529914529915,
+        "support": 1932.0
+      },
+      "Failure": {
+        "precision": 0.7464788732394366,
+        "recall": 0.7794117647058824,
+        "f1-score": 0.762589928057554,
+        "support": 68.0
+      },
+      "accuracy": 0.9835,
+      "macro avg": {
+        "precision": 0.869351411736359,
+        "recall": 0.8850474972597735,
+        "f1-score": 0.8770214597552728,
+        "support": 2000.0
+      },
+      "weighted avg": {
+        "precision": 0.9838686176154907,
+        "recall": 0.9835,
+        "f1-score": 0.9836716472975465,
+        "support": 2000.0
+      }
+    }
+  },
+  "training_seconds": 15.53,
+  "source_sha256_at_training": {
+    "__init__.py": "6b727cc9ca5d72061a629f9f9f4f5c9c5c78c5b74fda0879d0f89ef72a8a5f1b",
+    "data.py": "8f9bc8e1d78401bdeb54441407c71c2fffe497f0ba6f4011083321ac3621d0ad",
+    "eda.py": "9d00176dc83f63e903e9b6d4a93f7024824d42b4395cbe842d5f4cb82d8d7c2e",
+    "evaluate.py": "633be5b1b8c5264a428e0f6db3585454b2e6aa7297e5fdae62a68aa19e5862bd",
+    "predict.py": "e78fcf433b56dcc7551079e48fe12563e7b7f3328305aecf904d26945b2817ba",
+    "preprocessing.py": "03c5f3a4f57e2b7274bcfbe062776e4086913f294c181d006f31461f5eceadff",
+    "train.py": "fbea0d4382da323923603011109e04afa184bdcf62db284406df2205dde7fe7e"
+  },
+  "post_run_presentation_fix": "Removed aggregate accuracy from per-class classification-report CSV/display. The original training source hash is retained. No estimator, threshold, predictions, or metric values changed; test prediction was not repeated."
+}
